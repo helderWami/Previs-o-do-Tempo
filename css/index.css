@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background-color: #141f6b;
+}
+
+.body-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.body-container-forecast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.ocultar{
+    display: none !important;
+}
+
+.container,
+.container-forecast
+{
+    background-color: #f8cc73da;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    max-width: 400px;
+    border-radius: 1rem;
+}
+
+.container-forecast{
+    margin: 7px;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+
+
+.form h3{
+    margin-bottom: 1rem;
+}
+
+.form-input-container {
+    display: flex;
+
+}
+
+.form input{
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.form button{
+    padding: 0.8rem;
+    min-width: 50px; 
+    margin-left: 8px;
+    background-color: #eee56d;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#weather-data,
+#error-message,
+#loader,
+#suggestions {
+    border-top: 1px solid #FFF;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#weather-data h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+#weather-data h2 i{
+    font-size: 1rem;
+}
+
+#weather-data span{
+    margin: 0.6rem;
+}
+
+#temperature {
+    font-size: 4rem;
+}
+
+#country{
+    height: 20px;
+}
+
+#description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+}
+
+#description{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #humidity {
+    border-right: 1px solid #FFF;
+    margin: 0.6rem;
+    padding: 0.6rem;
+}
+
+#loader i {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #suggestions button,
+  #btnSugestoes
+  {
+    min-width: 150px;
+    margin: 0.8rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: #141f6b;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+  
+  #suggestions button:hover ,
+  #btnSugestoes:hover
+  {
+    opacity: 1;
+  }
+
+.alinhar{
+    display: flex;
+    justify-content: right;
+}
