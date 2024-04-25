@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathering with you!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- ********************** API´s **********************-->
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ***************************************************-->
+
+</head>
+
+<body>
+    <div class="alinhar">
+        <button id="btnSugestoes" onclick="mostrarSugestoes()">Sugestões</button>
+    </div>
+
+
+    <div class="body-container">
+
+        <div class="container">
+            <div class="form">
+                <h3>Confira o clima de uma cidade</h3>
+                <div class="form-input-container">
+                    <input type="text" id="cidade-input" placeholder="Insira o nome de uma cidade">
+                    <button id="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="weather-data" class="ocultar">
+                <h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="cidade"></span>
+                    <img src="" alt="Bandeira do país" id="country">
+                </h2>
+                <p id="temperature"><span></span> &deg;C </p>
+                <div id="description-container">
+                    <p id="description"></p>
+                    <img src="" id="weather-icon" alt="Condições do tempo">
+                </div>
+                <div id="details-container">
+                    <p id="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span></span>
+                    </p>
+                    <p id="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <span></span>
+                    </p>
+                </div>
+            </div>
+            <div id="error-message" class="ocultar">
+                <p>Não foi possível encontrar uma cidade com este nome.</p>
+                <br>
+                <p>:(</p>
+            </div>
+            <div id="loader" class="ocultar">
+                <i class="fa-solid fa-spinner"></i>
+            </div>
+            <div id="suggestions" class="ocultar">
+                <button id="luanda">Luanda</button>
+                <button id="benguela">Benguela</button>
+                <button id="huambo">Huambo</button>
+                <button id="cabinda">Cabinda</button>
+                <button id="huila">Huíla</button>
+                <button id="zaire">Zaire</button>
+                <button id="osaka">Osaka</button>
+                <button id="hokkaido">Hokkaido</button>
+                <button id="shibuya">Shibuya</button>
+                <button id="shinjuku">Shinjuku</button>
+                <button id="tokyo">Tokyo</button>
+                <button id="yokohama">Yokohama</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="body-container-forecast">
+
+
+
+    </div>
+
+</body>
+<script src="/js/index.js"></script>
+
+</html>
